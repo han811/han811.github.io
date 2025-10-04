@@ -1,0 +1,40 @@
+@article{Kim2025InvThink,
+  abbr={Preprint},
+  title={InvThink: Towards AI Safety via Inverse Reasoning},
+  author={Kim, Yubin and Kim, Taehan and Park, Eugene and Park, Chunjong and McDuff, Daniel and Breazeal, Cynthia and Park, Hae Won},
+  selected={true},
+  abstract={We present INVTHINK, a simple yet powerful approach that gives large language models (LLMs) the capability of inverse thinking: reasoning through failure modes before generating responses. Unlike existing safety alignment methods that optimize directly for safe response, INVTHINK instructs models to 1) enumerate potential harms, 2) analyze their consequences, and 3) generate safe outputs that proactively avoid these risks. Our method reveals three key findings: (i) safety improvements show stronger scaling with model size compared to existing safety methods. (ii) INVTHINK mitigates safety tax; by training models to systematically consider failure modes, it preserves general reasoning capabilities on standard benchmarks. (iii) beyond general safety tasks, INVTHINK excels in high-stakes domains including external-facing (medicine, finance, law) and agentic (blackmail, murder) risk scenarios, achieving up to 15.7% reduction in harmful responses compared to baseline methods like SafetyPrompt. We further implement INVTHINK via supervised fine-tuning, and reinforcement learning across three LLM families. These results suggest that inverse reasoning provides a scalable and generalizable path toward safer, more capable language models.},
+  year={2025},
+  arxiv={2510.01569},
+  preview={invthink_teaser.gif}
+}
+
+@article{Kim2025VocalAgent,
+  abbr={INTERSPEECH},
+  title={VocalAgent: Large Language Models for Vocal Health Diagnostics with Safety-Aware Evaluation},
+  author={Kim, Yubin and Kim, Taehan and Kang, Wonjune and Park, Eugene and Yoon, Joonsik and Lee, Dongjae and Liu, Xin and McDuff, Daniel and Lee, Hyeonhoon and Breazeal, Cynthia and Park, Hae Won},
+  selected={true},
+  abstract={Vocal health plays a crucial role in peoples' lives, significantly impacting their communicative abilities and interactions. However, despite the global prevalence of voice disorders, many lack access to convenient diagnosis and treatment. This paper introduces VocalAgent, an audio large language model (LLM) to address these challenges through vocal health diagnosis. We leverage Qwen-Audio-Chat fine-tuned on three datasets collected in-situ from hospital patients, and present a multifaceted evaluation framework encompassing a safety assessment to mitigate diagnostic biases, cross-lingual performance analysis, and modality ablation studies. VocalAgent demonstrates superior accuracy on voice disorder classification compared to state-of-the-art baselines. Its LLM-based method offers a scalable solution for broader adoption of health diagnostics, while underscoring the importance of ethical and technical validation.},
+  year={2025},
+  award={},
+  award_name={Oral},
+  website={https://han811.github.io/VocalAgent2025/},
+  arxiv={2505.13577},
+  preview={InterSpeech2025VocalAgent.png}
+}
+
+@article{Ryu2024Diffusion-edfs,
+  abbr={CVPR},
+  title={Diffusion-EDFs: Bi-equivariant Denoising Generative Modeling on SE(3) for Visual Robotic Manipulation},
+  author={Ryu, Hyunwoo and Kim, Jiwoo and An, Hyunseok and Chang, Junwoo and Seo, Joohwan and Kim, Taehan and Kim, Yubin and Hwang, Chaewon and Choi, Jongeun and Horowitz, Roberto},
+  selected={true},
+  abstract={Diffusion generative modeling has become a promising approach for learning robotic manipulation tasks from stochastic human demonstrations. In this paper we present Diffusion-EDFs a novel SE (3)-equivariant diffusion-based approach for visual robotic manipulation tasks. We show that our proposed method achieves remarkable data efficiency requiring only 5 to 10 human demonstrations for effective end-to-end training in less than an hour. Furthermore our benchmark experiments demonstrate that our approach has superior generalizability and robustness compared to state-of-the-art methods. Lastly we validate our methods with real hardware experiments.},
+  year={2024},
+  award={11.9% of accepted papers},
+  award_name={Highlight},
+  website={https://sites.google.com/view/diffusion-edfs},
+  video={https://www.youtube.com/watch?v=sJ3zcbPfPrI},
+  code={https://github.com/tomato1mule/diffusion_edf},
+  arxiv={2309.02685},
+  preview={diffusion_edf_cluttered_small.gif}
+}
