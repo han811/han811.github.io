@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://han811.github.io/sitemap.xml
