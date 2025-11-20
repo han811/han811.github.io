@@ -28,11 +28,11 @@ Additionally, I also have experience developing a light-weight Sound Source Loca
 <br>
 
 A short demonstration of the humanoid control I worked on appears at 2:45 for one second.
-<iframe width="100%" height="480" title="YouTube video player" src="https://www.youtube.com/embed/KnW9lU0lK5g?si=v3xYX8GwglwINR-o&amp;start=165" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="480" title="YouTube video player" src="https://www.youtube.com/embed/KnW9lU0lK5g?si=v3xYX8GwglwINR-o&mute=1&amp;start=165" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <figcaption style="text-align: center;">NVIDIA Promotional Video.</figcaption>
 
 <br>
 
 The SSL feature I worked on for Samsung Ballie appears at 0:48.
-<iframe width="100%" height="480" title="YouTube video player" src="https://www.youtube.com/embed/YBfSX3QiqDM?si=YCSoo7ZO5QZkqAIq&amp;start=48" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="480" title="YouTube video player" src="https://www.youtube.com/embed/YBfSX3QiqDM?si=YCSoo7ZO5QZkqAIq&mute=1&amp;start=48" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <figcaption style="text-align: center;">Introduction of Samsung Ballie.</figcaption>
