@@ -6,7 +6,7 @@ importance: 1
 category: Work
 ---
 
-As a **Robotics AI Engineer** at <a href="https://research.samsung.com/">Samsung Research</a>, I conducted research on imitation learning, vision-language-action models (VLA model) and reinforcement learning for robot manipulation and <a href="https://www.youtube.com/watch?v=KnW9lU0lK5g&t=165s">humanoids (1-second appearance at 2:45)</a>. I also developed a sound source localization algorithm for <a href="https://www.youtube.com/watch?v=YBfSX3QiqDM&t=48s">Samsung Ballie (shown at 0:48)</a>.
+As a **Robotics AI Engineer** at <a href="https://research.samsung.com/">Samsung Research</a>, I conducted research on imitation learning, vision-language-action models (VLA model) and reinforcement learning for robot manipulation and humanoids (e.g. nvidia promotion video <a href="https://www.youtube.com/watch?v=KnW9lU0lK5g&t=165s">(1-second appearance at 2:45)</a>, Samsung Tech Conference 2025 <a href="https://youtu.be/owLx0JoQ_UE?si=e-yl10B6Xao4pFUf&t=435">(7:15~7:35)</a>). I also developed a sound source localization algorithm for <a href="https://www.youtube.com/watch?v=YBfSX3QiqDM&t=48s">Samsung Ballie (shown at 0:48)</a>.
 
 **Period: 2022.07 - present**
 
