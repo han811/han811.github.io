@@ -1,10 +1,26 @@
+@article{Jeon2026Shallowπ,
+  abbr={Preprint},
+  title={Shallow-π: Knowledge Distillation for Flow-based VLAs},
+  author={Jeon, Boseong and Choi, Yunho and Kim, Taehan},
+  selected={true},
+  abstract={The growing demand for real-time robotic deployment necessitates fast and on-device inference for vision-language-action (VLA) models. Within the VLA literature, efficiency has been extensively studied at the token level, such as visual token pruning. In contrast, systematic transformer layer reduction has received limited attention and, to the best of our knowledge, has not been explored for flow-based VLA models under knowledge distillation. In this work, we propose Shallow-pi, a principled knowledge distillation framework that aggressively reduces the transformer depth of both the VLM backbone and the flow-based action head, compressing the model from 18 to 6 layers. Shallow-pi achieves over two times faster inference with less than one percent absolute drop in success rate on standard manipulation benchmarks, establishing state-of-the-art performance among reduced VLA models. Crucially, we validate our approach through industrial-scale real-world experiments on Jetson Orin and Jetson Thor across multiple robot platforms, including humanoid systems, in complex and dynamic manipulation scenarios.},
+  year={2026},
+  website={https://shallow-pi-five.vercel.app/},
+  video={https://shallow-pi-five.vercel.app/static/videos/main-video-1min-encoded.mp4},
+  code={https://github.com/icsl-Jeon/openpi},
+  arxiv={2601.20262},
+  preview={shallow_pi.gif}
+}
+
 @article{Kim2025InvThink,
   abbr={Preprint},
   title={InvThink: Towards AI Safety via Inverse Reasoning},
   author={Kim, Yubin and Kim, Taehan and Park, Eugene and Park, Chunjong and McDuff, Daniel and Breazeal, Cynthia and Park, Hae Won},
   selected={true},
-  abstract={We present INVTHINK, a simple yet powerful approach that gives large language models (LLMs) the capability of inverse thinking: reasoning through failure modes before generating responses. Unlike existing safety alignment methods that optimize directly for safe response, INVTHINK instructs models to 1) enumerate potential harms, 2) analyze their consequences, and 3) generate safe outputs that proactively avoid these risks. Our method reveals three key findings: (i) safety improvements show stronger scaling with model size compared to existing safety methods. (ii) INVTHINK mitigates safety tax; by training models to systematically consider failure modes, it preserves general reasoning capabilities on standard benchmarks. (iii) beyond general safety tasks, INVTHINK excels in high-stakes domains including external-facing (medicine, finance, law) and agentic (blackmail, murder) risk scenarios, achieving up to 15.7% reduction in harmful responses compared to baseline methods like SafetyPrompt. We further implement INVTHINK via supervised fine-tuning, and reinforcement learning across three LLM families. These results suggest that inverse reasoning provides a scalable and generalizable path toward safer, more capable language models.},
+  abstract={We present INVTHINK, a simple yet powerful approach that gives language models the capability of inverse thinking: reasoning through failure modes before generating responses. Unlike existing safety alignment methods that optimize directly for safe response, INVTHINK instructs models to 1) enumerate potential harms, 2) analyze their consequences, and 3) generate safe outputs that proactively avoid these risks. Our paper reveals three key findings: (i) INVTHINK demonstrates significantly improved safety reasoning as model size scales, compared to existing safety methods. (ii) INVTHINK mitigates safety tax; by training models to systematically consider failure modes, it preserves general reasoning capabilities on standard benchmarks. (iii) beyond general safety tasks, INVTHINK excels in high-stakes domains including external-facing applications (medicine, finance, law) and agentic risk scenarios (blackmail, murder), achieving up to 17.8% reduction in harmful responses compared to baseline methods like SafetyPrompt. We further equip INVTHINK with supervised fine-tuning, and reinforcement learning across three LLM families. These results suggest that INVTHINK provides a scalable and generalizable path toward safer, more capable language models.},
   year={2025},
+  website={https://invthink.github.io/},
+  code={https://github.com/invthink/invthink},
   arxiv={2510.01569},
   preview={invthink_teaser.gif}
 }
