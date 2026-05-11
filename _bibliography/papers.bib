@@ -1,3 +1,16 @@
+@article{Kim2026TeamBench,
+  abbr={Preprint},
+  title={TeamBench: Evaluating Agent Coordination under Enforced Role Separation},
+  author={Kim, Yubin and Park, Chanwoo and Kim, Taehan and Park, Eugene and Schmidgall, Samuel and Rahman, Salman and Park, Chunjong and Breazeal, Cynthia and Liu, Xin and Palangi, Hamid and Park, Hae Won and McDuff, Daniel},
+  selected={true},
+  abstract={Agent systems often decompose a task across multiple roles, but these roles are typically specified by prompts rather than enforced by access controls. Without enforcement, a team pass rate can mask whether agents actually coordinated or whether one role effectively did another role's work. We present TeamBench, a benchmark with 851 task templates and 931 seeded instances for evaluating agent coordination under operating system-enforced role separation. TeamBench separates specification access, workspace editing, and final certification across Planner, Executor, and Verifier roles, so that no role can read the full requirements, modify the workspace, and certify the final answer. Prompt-only and sandbox-enforced teams reach statistically indistinguishable pass rates, but prompt-only runs produce 3.6 times more cases where the verifier attempts to edit the executor's code. Verifiers approve 49% of submissions that fail the deterministic grader, and removing the verifier improves mean partial score in the ablation. Team value is also conditional. Teams benefit when single agents struggle, but hurt when single agents already perform well. A 40-session human study under the same role separation shows that our benchmark exposes interaction patterns that pass rate misses. Solo participants work through the task directly, human participants paired with agents often collapse into quick approval, and human teams spend more effort coordinating missing information across roles.},
+  year={2026},
+  website={https://teambench.github.io/},
+  code={https://github.com/ybkim95/TeamBench},
+  arxiv={2605.07073},
+  preview={teambench.png}
+}
+
 @article{Jeon2026Shallowπ,
   abbr={Preprint},
   title={Shallow-π: Knowledge Distillation for Flow-based VLAs},
@@ -12,13 +25,13 @@
   preview={shallow_pi.gif}
 }
 
-@article{Kim2025InvThink,
+@article{Kim2026InvThink,
   abbr={Preprint},
-  title={InvThink: Towards AI Safety via Inverse Reasoning},
+  title={InvThink: Premortem Reasoning for Safer Language Models},
   author={Kim, Yubin and Kim, Taehan and Park, Eugene and Park, Chunjong and McDuff, Daniel and Breazeal, Cynthia and Park, Hae Won},
   selected={true},
-  abstract={We present INVTHINK, a simple yet powerful approach that gives language models the capability of inverse thinking: reasoning through failure modes before generating responses. Unlike existing safety alignment methods that optimize directly for safe response, INVTHINK instructs models to 1) enumerate potential harms, 2) analyze their consequences, and 3) generate safe outputs that proactively avoid these risks. Our paper reveals three key findings: (i) INVTHINK demonstrates significantly improved safety reasoning as model size scales, compared to existing safety methods. (ii) INVTHINK mitigates safety tax; by training models to systematically consider failure modes, it preserves general reasoning capabilities on standard benchmarks. (iii) beyond general safety tasks, INVTHINK excels in high-stakes domains including external-facing applications (medicine, finance, law) and agentic risk scenarios (blackmail, murder), achieving up to 17.8% reduction in harmful responses compared to baseline methods like SafetyPrompt. We further equip INVTHINK with supervised fine-tuning, and reinforcement learning across three LLM families. These results suggest that INVTHINK provides a scalable and generalizable path toward safer, more capable language models.},
-  year={2025},
+  abstract={We present InvThink, a training and prompting framework that requires the model to enumerate, analyze, and constrain potential failures before generating its final response. Unlike existing safety alignment methods that optimize only for safe final responses, InvThink structures generation into three steps: (1) enumerate potential harms, (2) analyze their consequences, (3) generate the response under explicit mitigation constraints. We observe three findings: (i) InvThink shows higher safety scores at larger model sizes, compared to existing safety prompting and alignment baselines. (ii) InvThink mitigates the safety tax. Models trained with INVTHINK preserve their reasoning capability on standard benchmarks. (iii) beyond general safety tasks, InvThink also reduces harmful behavior in professional ethics domains (medicine, finance, law) and in agentic misalignment scenarios, achieving up to 32% reduction in harmfulness over zero-shot baselines and 16% over SafetyPrompt. We extend InvThink with supervised fine-tuning, and GRPO-based reinforcement learning across three LLM families.},
+  year={2026},
   website={https://invthink.github.io/},
   code={https://github.com/invthink/invthink},
   arxiv={2510.01569},
