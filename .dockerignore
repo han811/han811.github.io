@@ -1,3 +1,4 @@
-_site/
-.git/
-assets/
+.git
+_site
+.jekyll-cache
+assets

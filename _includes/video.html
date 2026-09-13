@@ -1,0 +1,5 @@
+{%- comment -%} {% include video.html src="/assets/img/projects/x.mp4" caption="..." width="60%" %} {%- endcomment -%}
+<figure class="video-file"{% if include.width %} style="max-width:{{ include.width }}"{% endif %}>
+  <video src="{{ include.src | relative_url }}" autoplay muted loop playsinline preload="metadata"{% if include.poster %} poster="{{ include.poster | relative_url }}"{% endif %}></video>
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

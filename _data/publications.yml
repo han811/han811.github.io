@@ -1,0 +1,66 @@
+# Papers, newest first. `selected: true` entries also appear on the home page.
+# link keys render as: arxiv → arXiv, website → Project page, code → Code, video → Video, pdf → PDF
+papers:
+  - title: "TeamBench: Evaluating Agent Coordination under Enforced Role Separation"
+    authors: Yubin Kim, Chanwoo Park, Taehan Kim, Eugene Park, Samuel Schmidgall, Salman Rahman, Chunjong Park, Cynthia Breazeal, Xin Liu, Hamid Palangi, Hae Won Park, Daniel McDuff
+    venue: Preprint
+    year: 2026
+    image: /assets/img/publications/teambench.jpg
+    links:
+      arxiv: https://arxiv.org/abs/2605.07073
+      website: https://teambench.github.io/
+      code: https://github.com/ybkim95/TeamBench
+    selected: false
+
+  - title: "InvThink: Premortem Reasoning for Safer Language Models"
+    authors: Yubin Kim, Taehan Kim, Eugene Park, Chunjong Park, Daniel McDuff, Cynthia Breazeal, Hae Won Park
+    venue: Preprint
+    year: 2026
+    image: /assets/img/publications/invthink.jpg
+    links:
+      arxiv: https://arxiv.org/abs/2510.01569
+      website: https://invthink.github.io/
+      code: https://github.com/invthink/invthink
+    selected: false
+
+  - title: "Shallow-π: Knowledge Distillation for Flow-based VLAs"
+    authors: Boseong Jeon, Yunho Choi, Taehan Kim
+    venue: IROS
+    year: 2026
+    award: Best Paper Award Finalist
+    award_detail: 10 of 1,585 accepted (top 0.6%) · 4,348 submitted
+    image: /assets/img/publications/shallow-pi.jpg
+    video: /assets/img/publications/shallow-pi.mp4
+    links:
+      arxiv: https://arxiv.org/abs/2601.20262
+      website: https://icsl-jeon.github.io/shallow-pi/
+      code: https://github.com/icsl-Jeon/openpi
+      video: https://shallow-pi-five.vercel.app/static/videos/main-video-1min-encoded.mp4
+    selected: true
+
+  - title: "VocalAgent: Large Language Models for Vocal Health Diagnostics with Safety-Aware Evaluation"
+    authors: Yubin Kim, Taehan Kim, Wonjune Kang, Eugene Park, Joonsik Yoon, Dongjae Lee, Xin Liu, Daniel McDuff, Hyeonhoon Lee, Cynthia Breazeal, Hae Won Park
+    venue: INTERSPEECH
+    year: 2025
+    award: Oral
+    image: /assets/img/publications/vocalagent.jpg
+    links:
+      arxiv: https://arxiv.org/abs/2505.13577
+      website: https://han811.github.io/VocalAgent2025/
+    selected: true
+
+  - title: "Diffusion-EDFs: Bi-equivariant Denoising Generative Modeling on SE(3) for Visual Robotic Manipulation"
+    authors: Hyunwoo Ryu, Jiwoo Kim, Hyunseok An, Junwoo Chang, Joohwan Seo, Taehan Kim, Yubin Kim, Chaewon Hwang, Jongeun Choi, Roberto Horowitz
+    venue: CVPR
+    year: 2024
+    award: Highlight
+    award_detail: 324 of 2,719 accepted (top 11.9%) · 11,532 submitted
+    image: /assets/img/publications/diffusion-edf.jpg
+    video: /assets/img/publications/diffusion-edf.mp4
+    links:
+      arxiv: https://arxiv.org/abs/2309.02685
+      website: https://sites.google.com/view/diffusion-edfs
+      code: https://github.com/tomato1mule/diffusion_edf
+      video: https://www.youtube.com/watch?v=sJ3zcbPfPrI
+    selected: true
+

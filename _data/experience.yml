@@ -1,0 +1,20 @@
+# Home page rows. Experience is kept to the most recent positions; earlier internships live in _projects/.
+work:
+  - org: Ludo Robotics
+    url: https://www.ludorobotics.ai/
+    page: /experience/ludo-robotics/
+    role: AI/ML Research Engineer (Robotics)
+    period: Aug 2026 - Present
+    summary: Building a foundation model for social humanoid interaction.
+
+  - org: Samsung Research
+    url: https://research.samsung.com/
+    page: /experience/samsung-research/
+    role: Robotics Research Engineer
+    period: Jul 2022 - Aug 2026
+    summary: VLA models and RL fine-tuning for precise manipulation and humanoid control, imitation learning for bi-manual assembly, and sound source localization for Samsung Ballie.
+
+education:
+  - org: Yonsei University
+    role: B.S. in Mechanical Engineering
+    period: Mar 2014 - Aug 2021

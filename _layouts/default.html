@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash. Without a saved
+    // choice the CSS follows the OS preference.
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  {% seo %}
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% feed_meta %}
+  {% if page.math %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% endif %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    {% unless page.url == "/" %}<a class="brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>{% endunless %}
+    <nav class="site-nav" aria-label="Main">
+      {% for item in site.nav %}
+        {% assign active = false %}
+        {% if item.url == "/" %}{% if page.url == "/" %}{% assign active = true %}{% endif %}{% elsif page.url contains item.url %}{% assign active = true %}{% endif %}
+        <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+           {% if active %}class="active" aria-current="page"{% endif %}
+           {% if item.external %}target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+        {% include icon.html name="sun" %}{% include icon.html name="moon" %}
+      </button>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site-footer wrap">
+    <span>&copy; {{ site.author.name }}</span>
+    <span class="sep">·</span>
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    <span class="sep">·</span>
+    <a href="https://github.com/han811/han811.github.io">Source</a>
+  </footer>
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
+</html>

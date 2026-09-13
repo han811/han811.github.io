@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="project">
+  <header class="post-header">
+    {% if page.category == "Work" %}{% assign parent_url = "/experience/" %}{% assign parent = "Work Experience" %}{% else %}{% assign parent_url = "/projects/" %}{% assign parent = "Projects" %}{% endif %}
+    <p class="eyebrow"><a href="{{ parent_url | relative_url }}">{{ parent }}</a></p>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      {% if page.role %}{{ page.role }}{% endif %}
+      {% if page.org %}<span class="sep">·</span>{% if page.org_url %}<a href="{{ page.org_url }}">{{ page.org }}</a>{% else %}{{ page.org }}{% endif %}{% endif %}
+      {% if page.period %}<span class="sep">·</span><span class="nowrap">{{ page.period }}</span>{% endif %}
+    </p>
+    {% if page.tags and page.tags.size > 0 %}
+      <p class="tags">{% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</p>
+    {% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <nav class="post-nav" aria-label="Project navigation">
+    <a href="{{ parent_url | relative_url }}">&larr; All {{ parent | downcase }}</a>
+  </nav>
+</article>

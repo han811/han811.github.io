@@ -1,0 +1,11 @@
+{%- comment -%} Posts grouped by year. Usage: {% include post-list.html posts=site.posts %} {%- endcomment -%}
+{%- assign prev_year = "" -%}
+{%- for post in include.posts -%}
+  {%- assign year = post.date | date: "%Y" -%}
+  {%- if year != prev_year -%}<h3 class="year">{{ year }}</h3>{%- endif -%}
+  <a class="post-row" href="{{ post.url | relative_url }}">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>
+    <span class="post-row-title">{{ post.title }}{% if post.tags and post.tags.size > 0 %} <span class="post-row-tags">{{ post.tags | join: ", " }}</span>{% endif %}</span>
+  </a>
+  {%- assign prev_year = year -%}
+{%- endfor -%}

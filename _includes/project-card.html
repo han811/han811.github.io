@@ -1,0 +1,9 @@
+{%- assign p = include.project -%}
+<a class="card" href="{{ p.url | relative_url }}">
+  <div class="card-media"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></div>
+  <div class="card-body">
+    <h3>{{ p.title }}</h3>
+    <p class="card-meta">{% if p.role %}{{ p.role }} · {% endif %}{{ p.period }}</p>
+    <p>{{ p.summary }}</p>
+  </div>
+</a>

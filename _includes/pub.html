@@ -1,0 +1,39 @@
+{%- comment -%} One publication row. Usage: {% include pub.html pub=entry %} {%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- assign primary = pub.links.website | default: pub.links.arxiv | default: pub.links.pdf -%}
+<article class="pub">
+  {%- if pub.video or pub.image -%}
+  <a class="pub-thumb" href="{{ primary }}" tabindex="-1" aria-hidden="true">
+    {%- if pub.video -%}
+      <video src="{{ pub.video | relative_url }}" poster="{{ pub.image | relative_url }}" autoplay muted loop playsinline preload="metadata"></video>
+    {%- else -%}
+      <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">
+    {%- endif -%}
+  </a>
+  {%- endif -%}
+  <div class="pub-body">
+    <h3 class="pub-title">{% if primary %}<a href="{{ primary }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+    <p class="pub-authors">{{ pub.authors | replace: site.author.name, '<span class="me">Taehan Kim</span>' }}</p>
+    <p class="pub-venue">
+      <span class="venue">{{ pub.venue }}{% if pub.year and pub.venue != "Preprint" %} {{ pub.year }}{% endif %}</span>
+      {%- if pub.award %}<span class="award">{% include icon.html name="award" %}{{ pub.award }}</span>{% endif %}
+      {%- if pub.award_detail %}<span class="detail">{{ pub.award_detail }}</span>{% endif %}
+    </p>
+    {%- if pub.links -%}
+    <p class="pub-links">
+      {%- for l in pub.links -%}
+        {%- case l[0] -%}
+          {%- when "arxiv" -%}{%- assign label = "arXiv" -%}
+          {%- when "website" -%}{%- assign label = "Project page" -%}
+          {%- when "code" -%}{%- assign label = "Code" -%}
+          {%- when "video" -%}{%- assign label = "Video" -%}
+          {%- when "pdf" -%}{%- assign label = "PDF" -%}
+          {%- when "slides" -%}{%- assign label = "Slides" -%}
+          {%- else -%}{%- assign label = l[0] | capitalize -%}
+        {%- endcase -%}
+        <a href="{{ l[1] }}">{{ label }}</a>
+      {%- endfor -%}
+    </p>
+    {%- endif -%}
+  </div>
+</article>

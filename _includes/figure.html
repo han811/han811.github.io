@@ -1,0 +1,5 @@
+{%- comment -%} {% include figure.html src="/assets/img/..." alt="..." caption="..." width="60%" %} {%- endcomment -%}
+<figure{% if include.width %} style="max-width:{{ include.width }}"{% endif %}>
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | default: include.caption | default: '' }}" loading="lazy">
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

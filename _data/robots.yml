@@ -1,0 +1,34 @@
+# "Robots I've worked with" strip on the home page, sorted newest first by `date` (last time I worked with it).
+# Images live in assets/img/robots/ only.
+- name: Unitree G1
+  date: 2026-09
+  image: /assets/img/robots/unitree-g1.jpg
+  url: /experience/ludo-robotics/
+- name: RB-Y1
+  date: 2026-08
+  image: /assets/img/robots/rby1.jpg
+  url: /experience/samsung-research/
+- name: Franka Panda
+  date: 2024-12
+  image: /assets/img/robots/panda.jpg
+  url: /experience/samsung-research/
+- name: Samsung Ballie
+  date: 2023-12
+  image: /assets/img/robots/ballie.jpg
+  url: /experience/samsung-research/
+- name: Bear Robotics Servi
+  date: 2022-07
+  image: /assets/img/robots/servi.jpg
+  url: /experience/bear-robotics/
+- name: Kinova JACO
+  date: 2020-11
+  image: /assets/img/robots/jaco.jpg
+  url: /projects/mvae-sensor-fusion/
+- name: DOGU Robjet
+  date: 2020-05
+  image: /assets/img/robots/robjet.jpg
+  url: /experience/dogu/
+- name: RoboMaster RoboRTS
+  date: 2019-05
+  image: /assets/img/robots/roborts.jpg
+  url: /projects/robomaster/
