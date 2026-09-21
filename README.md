@@ -1,3 +1,5 @@
+
+
 # han811.github.io
 
 [han811.github.io](https://han811.github.io) 소스. 테마·플러그인 최소화한 Jekyll 사이트이며, `main`에 push하면 GitHub Pages가 알아서 빌드합니다
@@ -18,7 +20,7 @@ docker compose up      # → http://localhost:4000  (첫 실행만 이미지 빌
 | 소개글, 소속, 링크, 메뉴 | `index.md`, `_config.yml` |
 | 경력 / 학력 | `_data/experience.yml` |
 | 논문 / 특허 | `_data/publications.yml` (썸네일: `assets/img/publications/`) |
-| 홈의 로봇 목록 | `_data/robots.yml` |
+| 홈의 로봇 목록 | `_data/robots.yml` (이미지: `assets/img/robots/`) |
 | 경력 상세 / 프로젝트 | `_projects/<slug>.md`, front matter의 `category`(Work → /experience/, Research → /projects/), `date`(기간 종료 시점, 최신순 정렬 기준), `home: true`(홈에 노출), `image`, `summary` |
 | 블로그 글 | `_posts/YYYY-MM-DD-slug.md` (아래 참고) |
 | 색상 / 폰트 | `assets/css/main.scss` 맨 위 tokens 섹션 |
