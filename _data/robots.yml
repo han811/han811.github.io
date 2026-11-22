@@ -1,7 +1,7 @@
 # "Robots I've worked with" strip on the home page, sorted newest first by `date` (last time I worked with it).
 # Images live in assets/img/robots/ only.
 - name: Unitree G1
-  date: 2026-09
+  date: 2026-11
   image: /assets/img/robots/unitree-g1.jpg
   url: /experience/ludo-robotics/
 - name: RB-Y1

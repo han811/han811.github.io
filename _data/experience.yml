@@ -1,11 +1,17 @@
 # Home page rows. Experience is kept to the most recent positions; earlier internships live in _projects/.
 work:
+  - org: Holiday Robotics
+    url: https://holiday-robotics.com/
+    page: /experience/holiday-robotics/
+    role: Senior Research Engineer
+    period: Nov 2026 - Present
+
   - org: Ludo Robotics
     url: https://www.ludorobotics.ai/
     page: /experience/ludo-robotics/
     role: AI/ML Research Engineer (Robotics)
-    period: Aug 2026 - Present
-    summary: Building a foundation model for social humanoid interaction.
+    period: Aug 2026 - Nov 2026
+    summary: Worked on a foundation model for social humanoid interaction.
 
   - org: Samsung Research
     url: https://research.samsung.com/

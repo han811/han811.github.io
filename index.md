@@ -8,8 +8,8 @@ permalink: /
     <h1>{{ site.author.name }}</h1>
     <p class="role">{{ site.author.role }} · {% if site.author.affiliation_url != "" %}<a href="{{ site.author.affiliation_url }}">{{ site.author.affiliation }}</a>{% else %}{{ site.author.affiliation }}{% endif %}</p>
     <div class="bio">
-      <p>I'm a research engineer working on <strong>learning-based robot manipulation and humanoids.</strong> At <a href="https://www.ludorobotics.ai/">Ludo Robotics</a>, I'm building a foundation model for social humanoid interaction.</p>
-      <p>Before that, I spent four years at <a href="https://research.samsung.com/">Samsung Research</a>, working on vision-language-action (VLA) models, imitation-learning policies, and RL fine-tuning for precise manipulation and humanoid control. I also built the sound source localization system for <a href="https://www.youtube.com/watch?v=YBfSX3QiqDM&t=48s">Samsung Ballie</a>.</p>
+      <p>I'm a research engineer working on <strong>learning-based robot manipulation and humanoids.</strong> I'm currently a Senior Research Engineer at <a href="https://holiday-robotics.com/">Holiday Robotics</a>.</p>
+      <p>Before that, I worked on a foundation model for social humanoid interaction at <a href="https://www.ludorobotics.ai/">Ludo Robotics</a>, and spent four years at <a href="https://research.samsung.com/">Samsung Research</a>, working on vision-language-action (VLA) models, imitation-learning policies, and RL fine-tuning for precise manipulation and humanoid control. I also built the sound source localization system for <a href="https://www.youtube.com/watch?v=YBfSX3QiqDM&t=48s">Samsung Ballie</a>.</p>
     </div>
     <div class="links">
       {% for l in site.links %}<a href="{{ l.url }}"{% unless l.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %}>{% include icon.html name=l.icon %}{{ l.name }}</a>{% endfor %}

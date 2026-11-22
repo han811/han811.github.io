@@ -3,8 +3,8 @@ tagline: Robotics AI Engineer
 description: >-
   Taehan Kim is a robotics AI engineer working on learning-based robot
   manipulation and humanoids: vision-language-action models, imitation
-  learning, and reinforcement learning. Currently at Ludo Robotics,
-  previously Samsung Research.
+  learning, and reinforcement learning. Currently at Holiday Robotics,
+  previously Ludo Robotics and Samsung Research.
 url: https://han811.github.io
 lang: en
 timezone: Asia/Seoul
@@ -12,9 +12,9 @@ timezone: Asia/Seoul
 author:
   name: Taehan Kim
   email: kimuw42@gmail.com
-  role: AI/ML Research Engineer
-  affiliation: Ludo Robotics
-  affiliation_url: https://www.ludorobotics.ai/
+  role: Senior Research Engineer
+  affiliation: Holiday Robotics
+  affiliation_url: https://holiday-robotics.com/
   photo: /assets/img/profile.jpg
 
 cv_url: https://drive.google.com/file/d/1hgfFzFpaLTZjCnNlBRN3P6ymjFCuTjdK/view?usp=sharing

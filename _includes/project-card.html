@@ -4,6 +4,6 @@
   <div class="card-body">
     <h3>{{ p.title }}</h3>
     <p class="card-meta">{% if p.role %}{{ p.role }} · {% endif %}{{ p.period }}</p>
-    <p>{{ p.summary }}</p>
+    {% if p.summary %}<p>{{ p.summary }}</p>{% endif %}
   </div>
 </a>
